@@ -2,35 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Baklytsky home work 7</title>
 </head>
 <body>
 <header id="header">
     <div class="container">
-        <h1 class="site-title">
-            <a href="index.html" class="logo">
-                <img src="./img/logo_kramer.png" alt="Logo" class="logo-img">
-            </a>
-        </h1>
-        <nav class="navigation">
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#about">About</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#team">Team</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-3">
+                <h1>
+                    <a href="index.html" class="logo">
+                        <img src="img/logo_kramer.png" alt="Logo" class="logo-img">
+                    </a>
+                </h1>
+            </div>
+            <div class="col-5 ml-auto">
+                <nav>
+                    <ul class="menu d-flex justify-content-center align-items-center">
+                        <li class="menu__item">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#team">Team</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
 </header>
 <section class="video">

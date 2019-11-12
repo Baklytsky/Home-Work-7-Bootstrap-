@@ -1,2 +1,25 @@
 @import url(../styles/reset.css);
 @import url(../styles/icons.css);
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    -webkit-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+.animate{
+    background-color:#2ECC71;
+    opacity: 0.95;
+}
+.menu__item {
+    padding: 5px 10px;
+}
+.menu__item a {
+    color: #FFF;
+    font-size: 22px;
+}
+#header .container .row {
+    padding: 3% 0;
+}
