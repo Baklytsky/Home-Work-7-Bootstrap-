@@ -1,5 +1,5 @@
-@import url(../styles/reset.css);
-@import url(../styles/icons.css);
+@import url(reset.css);
+@import url(icons.css);
 header {
     background-color: transparent;
     position: fixed;
@@ -13,13 +13,115 @@ header {
     background-color:#2ECC71;
     opacity: 0.95;
 }
+#header .container .row {
+    padding: 2% 0;
+}
+.logo-img {
+    width: 60%;
+    height: 35%;
+}
 .menu__item {
-    padding: 5px 10px;
+    padding: 0 5px;
 }
 .menu__item a {
     color: #FFF;
     font-size: 22px;
 }
-#header .container .row {
-    padding: 3% 0;
+.alt-grid {
+    padding-right:0;
+    padding-left:0;
+    margin-right: 0;
+    margin-left: 0;
 }
+.video {
+     height: 100vh;
+     background-color: #34495E;
+     width: 100%;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+.sixteen-nine {
+    position: relative;
+}
+.sixteen-nine:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%;
+}
+.sixteen-nine > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.video-title {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    left: 20%;
+    bottom: 20%;
+}
+.video-title a {
+    font-size: 1.5em;
+    color: #FFF;
+    border-radius: 100%;
+    background-color: #2ECC71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.video-title h2 {
+    padding-bottom: 5%;
+}
+.video-title span {
+    padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    h2 {font-size: 30px;}
+    .menu__item a {font-size: 22px;}
+    .video-title a {font-size: 2.5em;}
+}
+@media (max-width: 768px) {
+    h2 {font-size: 32px;}
+    .menu__item a {font-size: 15px;}
+}
+@media (max-width: 576px) {
+    h2 {font-size: 20px;}
+    .menu__item a {font-size: 15px;}
+}
+@media (max-width: 425px) {
+    h2 {font-size: 20px;}
+    .menu__item a {font-size: 15px;}
+}
+@media (max-width: 375px) {
+    h2 {font-size: 18px;}
+    .menu__item a {font-size: 15px;}
+}
+@media (max-width: 320px) {
+    h2 {font-size: 15px;}
+    .menu__item a {font-size: 12px;}
+
+}
+
