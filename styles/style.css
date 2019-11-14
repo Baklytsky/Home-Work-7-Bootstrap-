@@ -10,10 +10,6 @@ header {
     -o-transition: background-color 0.3s linear;
     transition: background-color 0.3s linear;
 }
-/*h2 {
-        font-size: calc(3rem + 6 * (100vw - 320px) / 880)
-}
-*/
 .animate{
     background-color:#2ECC71;
     opacity: 0.95;
