@@ -1,14 +1,19 @@
-@import url(reset.css);
-@import url(icons.css);
+@import url(../styles/reset.css);
+@import url(../styles/icons.css);
 header {
     background-color: transparent;
     position: fixed;
     width: 100%;
+    padding-top: 1%;
     z-index: 1;
     -webkit-transition: background-color 0.3s linear;
     -o-transition: background-color 0.3s linear;
     transition: background-color 0.3s linear;
 }
+/*h2 {
+        font-size: calc(3rem + 6 * (100vw - 320px) / 880)
+}
+*/
 .animate{
     background-color:#2ECC71;
     opacity: 0.95;
@@ -16,9 +21,9 @@ header {
 #header .container .row {
     padding: 2% 0;
 }
-.logo-img {
-    width: 60%;
-    height: 35%;
+.bars-style {
+    font-size: 1.5em;
+    color: #FFF;
 }
 .menu__item {
     padding: 0 5px;
@@ -26,8 +31,12 @@ header {
 .menu__item a {
     color: #FFF;
     font-size: 22px;
+    text-decoration: none;
 }
-.alt-grid {
+.menu__item a:hover {
+    color: #FCE38A;
+}
+.indent {
     padding-right:0;
     padding-left:0;
     margin-right: 0;
@@ -60,26 +69,56 @@ video {
 }
 .video-title {
     position: absolute;
-    top: 40%;
-    right: 20%;
-    left: 20%;
-    bottom: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.video-title h2 {
+    font-weight: 700;
+    padding-bottom: 10%;
+}
+.video-title h2 span {
+    display: block;
 }
 .video-title a {
+    margin: 0 auto;
+    text-decoration: none;
+}
+.video-title a:link, .video-title a:visited {
+    color: #FFF;
+}
+.video-title span {
+    padding-top: 1%;
+}
+.explore-link {
+    position: relative;
+    margin: 0 auto;
+}
+.explore-button {
     font-size: 1.5em;
     color: #FFF;
     border-radius: 100%;
     background-color: #2ECC71;
+    padding: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
 }
-.video-title h2 {
-    padding-bottom: 5%;
+.explore-link:after {
+    content: "";
+    border-top: 1px solid #808080;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    padding-right: calc(50vw - 25px);
 }
-.video-title span {
-    padding-top: 5%;
+.explore-link:before {
+    content: "";
+    border-top: 1px solid #808080;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    padding-left: calc(50vw - 25px);
 }
 
 
@@ -93,52 +132,36 @@ video {
 
 
 
-
-
-
-@media (max-width: 2560px) {
-    h2 {font-size: 130px;}
-    .menu__item a {font-size: 22px;}
-    .video-title a {font-size: 5.0em;}
-}
-@media (max-width: 1440px) {
+@media (min-width: 1500px) {
     h2 {font-size: 70px;}
-    .menu__item a {font-size: 22px;}
-    .video-title a {font-size: 4.5em;}
+    .menu__item a {font-size: 20px;}
+}
+@media (max-width: 1500px) {
+    h2 {font-size: 45px;}
+    .menu__item a {font-size: 20px;}
 }
 @media (max-width: 1200px) {
-    h2 {font-size: 55px;}
-    .menu__item a {font-size: 22px;}
-    .video-title a {font-size: 4.5em;}
-}
-@media (max-width: 1024px) {
-    h2 {font-size: 50px;}
-    .menu__item a {font-size: 22px;}
-    .video-title a {font-size: 4.5em;}
+    h2 {font-size: 30px;}
+    .menu__item a {font-size: 15px;}
+    .explore-button {padding: 5px; font-size: 1em;}
+    .explore-link:after {padding-right: calc(50vw - 15px);}
+    .explore-link:before {padding-left: calc(50vw - 15px);}
 }
 @media (max-width: 768px) {
-    h2 {font-size: 32px;}
-    .menu__item a {font-size: 20px;}
-    .video-title a {font-size: 4em;}
-}
-@media (max-width: 576px) {
     h2 {font-size: 20px;}
-    .menu__item a {font-size: 15px;}
-    .video-title a {font-size: 3.5em;}
+    .menu__item a {font-size: 12px;}
+    .explore-title {font-size: 12px;}
 }
-@media (max-width: 425px) {
-    h2 {font-size: 20px;}
-    .menu__item a {font-size: 15px;}
-    .video-title a {font-size: 2.5em;}
-}
-@media (max-width: 375px) {
-    h2 {font-size: 18px;}
-    .menu__item a {font-size: 15px;}
-    .video-title a {font-size: 1.5em;}
-}
-@media (max-width: 320px) {
+@media (max-width: 475px) {
     h2 {font-size: 15px;}
     .menu__item a {font-size: 12px;}
-    .video-title a {font-size: 1.5em;}
+    .explore-title {font-size: 10px;}
+    .video-title {top: 60%;}
+    .video-title h2 {display: none;}
 }
+
+
+
+
+
 
