@@ -39,10 +39,11 @@ header {
     margin-left: 0;
 }
 .video {
-     background-color: #34495E;
-     width: 100%;
+    background: url(../img/rocks.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
 }
-video {
+.video-play {
     width: 100%;
     height: auto;
 }
@@ -66,6 +67,8 @@ video {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
     transform: translate(-50%);
 }
 .video-headline {
@@ -95,8 +98,14 @@ video {
     border-radius: 100%;
     background-color: #2ECC71;
     padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 0 auto;
 }
@@ -215,9 +224,17 @@ video {
     top: 0;
     background-color: #3E5266;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     -webkit-transition-duration: 0.96s;
     -o-transition-duration: 0.96s;
@@ -411,26 +428,6 @@ li.footer-list a {
     line-height: 1.6;
     font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 1500px) {
     .video-headline {font-size: 70px;}
     .menu__item a {font-size: 20px;}
@@ -467,10 +464,10 @@ li.footer-list a {
     .menu__item a, .explore-title {font-size: 12px;}
     .video-title {top: 60%;}
     .video-headline {display: none;}
-    .portfolio-list {flex-direction: column; text-align: center;}
+    .portfolio-list {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column; text-align: center;}
     .Cosmo-Kramer:before, .George-Constansa:before {width: 130px; height: 130px;}
+    .video-play {display: none;}
 }
-
 
 
 
