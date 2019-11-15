@@ -308,7 +308,90 @@ video {
     color: #2980B9;
     background-color: #FFF;
 }
-
+#contact {
+    padding-top: 10%;
+}
+.contact-headline {
+    font-size: 45px;
+    font-weight: 700;
+    color: #2C3E50;
+}
+.contact-text {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2C3E50;
+}
+input::-webkit-input-placeholder {
+    color: #2C3E50;
+}
+input::-moz-placeholder {
+    color: #2C3E50;
+}
+input:-ms-input-placeholder {
+    color: #2C3E50;
+}
+input::-ms-input-placeholder {
+    color: #2C3E50;
+}
+input::placeholder {
+    color: #2C3E50;
+}
+textarea::-webkit-input-placeholder {
+    color: #2C3E50;
+}
+textarea::-moz-placeholder {
+    color: #2C3E50;
+}
+textarea:-ms-input-placeholder {
+    color: #2C3E50;
+}
+textarea::-ms-input-placeholder {
+    color: #2C3E50;
+}
+textarea::placeholder {
+    color: #2C3E50;
+}
+.contact-input-style {
+    width: 100%;
+    line-height: 1.5;
+    border: none;
+    border-bottom: 2px solid #2ECC71;
+    margin-top: 45px;
+}
+.contact-input li textarea {
+    padding-bottom: 50px;
+}
+.form-button {
+    color: #FFF;
+    padding: 15px 30px;
+    background-color: #2ECC71;
+    border-radius: 30px;
+    margin-top: 45px;
+    border: 1px solid #FFF;
+}
+.form-button:hover {
+    color: #2ECC71;
+    background-color: #FFF;
+    border: 1px solid #2ECC71;
+}
+address span {
+    display: block;
+}
+.address-headline {
+    font-size: 16px;
+    font-style: normal;
+    color: #2C3E50;
+    font-weight: bold;
+    line-height: 2;
+    margin-top: 45px;
+}
+.address-title {
+    font-size: 20px;
+    font-style: normal;
+    color: #2C3E50;
+    line-height: 1.6;
+    text-align: left;
+}
 
 
 
@@ -335,16 +418,16 @@ video {
 @media (max-width: 1500px) {
     .video-headline {font-size: 45px;}
     .menu__item a {font-size: 20px;}
-    .portfolio-headline, .team-headline, .about-headline {font-size: 30px;}
+    .portfolio-headline, .team-headline, .about-headline, .contact-headline {font-size: 30px;}
 }
 @media (max-width: 1200px) {
     .video-headline {font-size: 30px;}
     .menu__item a {font-size: 15px;}
     .explore-button {padding: 5px; font-size: 1em;}
-    .explore-link:after {padding-right: calc(50vw - 15px);}
-    .explore-link:before {padding-left: calc(50vw - 15px);}
-    .about-text {font-size: 20px;}
-    .services-headline, .profile-headline, .portfolio-list-item {font-size: 20px;}
+    .explore-link:after {padding-right: calc(50vw - 25px);}
+    .explore-link:before {padding-left: calc(50vw - 25px);}
+    .about-text, .contact-text {font-size: 20px;}
+    .services-headline, .profile-headline, .portfolio-list-item, .contact-headline {font-size: 20px;}
     .services-text, .profile-text {font-size: 15px;}
 }
 @media (max-width: 992px) {
@@ -353,9 +436,10 @@ video {
 }
 @media (max-width: 768px) {
     .video-headline {font-size: 20px;}
-    .about-headline, .portfolio-headline, .team-headline {font-size: 20px;}
+    .about-headline, .portfolio-headline, .team-headline, .contact-headline {font-size: 20px;}
     .menu__item a, .explore-title {font-size: 12px;}
-    .about-text, .services-text {font-size: 15px; text-align: justify;}
+    .about-text, .services-text, .contact-text {font-size: 15px; text-align: justify;}
+    .form-button {width: 100%;}
 }
 @media (max-width: 475px) {
     .profile-headline {font-size: 15px;}
