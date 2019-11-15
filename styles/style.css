@@ -245,7 +245,69 @@ video {
 .portfolio-photo-item:hover .portfolio-holder {
     opacity: 0.9;
 }
-
+#team {
+    padding: 10% 0 10%;
+    background-color: #2980B9;
+}
+.team-headline {
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 10%;
+}
+.team-profile {
+    padding-top: 5%;
+}
+.profile-headline {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 4;
+}
+.Cosmo-Kramer:before {
+    content: "";
+    width: 230px;
+    height: 230px;
+    background: url("../img/cosmo_kramer.png") no-repeat center / cover;
+    border: 4px solid #FFF;
+    border-radius: 100%;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+}
+.George-Constansa:before {
+    content: "";
+    width: 230px;
+    height: 230px;
+    background: url("../img/george_constanza.png") no-repeat center / cover;
+    border: 4px solid #FFF;
+    border-radius: 100%;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+}
+.profile-icons {
+    font-size: 2em;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.profile-icons:hover {
+    color: #2980B9;
+    background-color: #FFF;
+}
 
 
 
@@ -272,9 +334,8 @@ video {
 }
 @media (max-width: 1500px) {
     .video-headline {font-size: 45px;}
-    .about-headline {font-size: 30px;}
     .menu__item a {font-size: 20px;}
-    .portfolio-headline {font-size: 30px;}
+    .portfolio-headline, .team-headline, .about-headline {font-size: 30px;}
 }
 @media (max-width: 1200px) {
     .video-headline {font-size: 30px;}
@@ -283,9 +344,8 @@ video {
     .explore-link:after {padding-right: calc(50vw - 15px);}
     .explore-link:before {padding-left: calc(50vw - 15px);}
     .about-text {font-size: 20px;}
-    .services-headline {font-size: 18px;}
-    .services-text {font-size: 15px;}
-    .portfolio-list-item {font-size: 20px;}
+    .services-headline, .profile-headline, .portfolio-list-item {font-size: 20px;}
+    .services-text, .profile-text {font-size: 15px;}
 }
 @media (max-width: 992px) {
     .about-text {font-size: 20px; text-align: center}
@@ -293,20 +353,17 @@ video {
 }
 @media (max-width: 768px) {
     .video-headline {font-size: 20px;}
-    .about-headline {font-size: 20px;}
-    .menu__item a {font-size: 12px;}
-    .explore-title {font-size: 12px;}
-    .about-text {font-size: 15px; text-align: justify;}
-    .services-text {font-size: 15px; text-align: justify;}
-    .portfolio-headline {font-size: 20px;}
+    .about-headline, .portfolio-headline, .team-headline {font-size: 20px;}
+    .menu__item a, .explore-title {font-size: 12px;}
+    .about-text, .services-text {font-size: 15px; text-align: justify;}
 }
 @media (max-width: 475px) {
-    .video-headline {font-size: 15px;}
-    .menu__item a {font-size: 12px;}
-    .explore-title {font-size: 10px;}
+    .profile-headline {font-size: 15px;}
+    .menu__item a, .explore-title {font-size: 12px;}
     .video-title {top: 60%;}
-    .video-title h2 {display: none;}
+    .video-headline {display: none;}
     .portfolio-list {flex-direction: column; text-align: center;}
+    .Cosmo-Kramer:before, .George-Constansa:before {width: 130px; height: 130px;}
 }
 
 
