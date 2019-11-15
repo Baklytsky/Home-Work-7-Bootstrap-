@@ -309,7 +309,7 @@ video {
     background-color: #FFF;
 }
 #contact {
-    padding-top: 10%;
+    padding: 10% 0 10%;
 }
 .contact-headline {
     font-size: 45px;
@@ -374,7 +374,7 @@ textarea::placeholder {
     background-color: #FFF;
     border: 1px solid #2ECC71;
 }
-address span {
+.span-block {
     display: block;
 }
 .address-headline {
@@ -392,6 +392,26 @@ address span {
     line-height: 1.6;
     text-align: left;
 }
+.footer-background {
+    background-color: #2C3E50;
+    padding-top: 5%;
+}
+
+li.footer-list a {
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.6;
+    font-style: normal;
+}
+.footer-list  {
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.6;
+    font-style: normal;
+}
+
 
 
 
@@ -428,7 +448,7 @@ address span {
     .explore-link:before {padding-left: calc(50vw - 25px);}
     .about-text, .contact-text {font-size: 20px;}
     .services-headline, .profile-headline, .portfolio-list-item, .contact-headline {font-size: 20px;}
-    .services-text, .profile-text {font-size: 15px;}
+    .services-text, .profile-text, .footer-list {font-size: 15px;}
 }
 @media (max-width: 992px) {
     .about-text {font-size: 20px; text-align: center}
@@ -440,6 +460,7 @@ address span {
     .menu__item a, .explore-title {font-size: 12px;}
     .about-text, .services-text, .contact-text {font-size: 15px; text-align: justify;}
     .form-button {width: 100%;}
+    .logo {margin: 0 auto;}
 }
 @media (max-width: 475px) {
     .profile-headline {font-size: 15px;}
