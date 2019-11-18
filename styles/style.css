@@ -15,7 +15,7 @@ header {
     opacity: 0.95;
 }
 #header .container .row {
-    padding: 2% 0;
+    padding: 2% 0; /*Я ж просил никогда не писать стили на классы бутстрапа!*/
 }
 .bars-style {
     font-size: 1.5em;
@@ -125,7 +125,7 @@ header {
     position: absolute;
     top: 50%;
     right: 100%;
-    padding-left: calc(50vw - 25px);
+    padding-left: calc(50vw - 25px);/*1. Тут же стиля на обе линии практически идентичны. Можна ж через запятую все прописать. 2. Почему отступы разные?*/
 }
 #about {
     background-color: #34495E;
@@ -154,19 +154,19 @@ header {
     border-radius: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex;/*в бутстрапе есть для этого класс*/
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center;/*в бутстрапе есть для этого класс*/
     padding: 15px;
 }
 .services-headline {
     font-size: 26px;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.3;/*А в 1 строчку нельзя прописать шрифт?*/
     padding: 10% 0 5%;
 }
 .services-text {
@@ -176,7 +176,7 @@ header {
     padding-bottom: 5%;
 }
 .hide {
-    display: none;
+    display: none; /*в бутстрапе есть для этого класс*/
 }
 .portfolio-headline {
     font-size: 45px;
@@ -250,7 +250,7 @@ header {
     padding: 10px 15px;
     border: 1px solid #FFF;
     border-radius: 30px;
-    margin: 0 auto;
+    margin: 0 auto;/*в бутстрапе есть для этого класс*/
     -webkit-transition: background, color 0.3s linear;
     -o-transition: background, color 0.3s linear;
     transition: background, color 0.3s linear;
@@ -263,7 +263,7 @@ header {
     opacity: 0.9;
 }
 #team {
-    padding: 10% 0 10%;
+    padding: 10% 0 10%; /*10% 0*/
     background-color: #2980B9;
 }
 .team-headline {
@@ -283,7 +283,7 @@ header {
     content: "";
     width: 230px;
     height: 230px;
-    background: url("../img/cosmo_kramer.png") no-repeat center / cover;
+    background: url("../img/cosmo_kramer.png") no-repeat center / cover; /*фото человека точно заслуживает возможности скачивания*/
     border: 4px solid #FFF;
     border-radius: 100%;
     display: block;
@@ -302,7 +302,7 @@ header {
     margin: 0 auto;
 }
 .profile-icons {
-    font-size: 2em;
+    font-size: 2em; /*Единые единицы измерения для шрифтов. Либо пиксели либо ем*/
     color: #FFF;
     border: 1px solid #FFF;
     border-radius: 100%;
@@ -459,7 +459,7 @@ li.footer-list a {
     .form-button {width: 100%;}
     .logo {margin: 0 auto;}
 }
-@media (max-width: 475px) {
+@media (max-width: 475px) { /*От меньщего к большему*/
     .profile-headline {font-size: 15px;}
     .menu__item a, .explore-title {font-size: 12px;}
     .video-title {top: 60%;}
